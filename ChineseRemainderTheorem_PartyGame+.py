@@ -41,9 +41,9 @@ def funn(i, j=None):
 
 # construct lists of numbers
 
-Num3 = [[i for i in range(1, 101) if i % 3 == remainder] for remainder in range(3)]
-Num5 = [[i for i in range(1, 101) if i % 5 == remainder] for remainder in range(5)]
-Num7 = [[i for i in range(1, 101) if i % 7 == remainder] for remainder in range(7)]
+num3 = [[i for i in range(1, 101) if i % 3 == remainder] for remainder in range(3)]
+num5 = [[i for i in range(1, 101) if i % 5 == remainder] for remainder in range(5)]
+num7 = [[i for i in range(1, 101) if i % 7 == remainder] for remainder in range(7)]
 
 print("Think of a number between 1 and 100 !\n")
 
@@ -89,11 +89,11 @@ print("mmh, okay. Let me ask you a final question!\n")
 r7 = int(input("Remainder when you divide by 7? \n\n (0,1,2,3,4,5,6): "))
 
 # Find the number using the remainders upon division by 3,5,7
-Num1 = (70 * r3) + (21 * r5) + (15 * r7)
+num1 = (70 * r3) + (21 * r5) + (15 * r7)
 
-Num = Num1 % 105
+Num = num1 % 105
 
-print(f"Me thinks your number is {Num} :-)!")
+print(f"Me thinks your number is {num} :-)!")
 time.sleep(5)
 print("\nExcellent, I have ESP!!\nHave a great day!!")
  
