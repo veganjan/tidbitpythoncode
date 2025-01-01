@@ -21,7 +21,7 @@ def funn(i, j=None):
 
     '''
     if j is not None:
-        intersection = list(set(Num3[i]) & set(Num5[j]))
+        intersection = list(set(num3[i]) & set(num5[j]))
         guessN = random.choice(intersection)
         response=input(f"Is your number {guessN} ? (y/n)")
         if response == 'y':
@@ -30,7 +30,7 @@ def funn(i, j=None):
             print("\nHave a great day!!\n")  
             sys.exit()  
     else:
-        guessN = random.choice(Num3[i])
+        guessN = random.choice(num3[i])
         response=input(f"Is your number {guessN} ? (y/n)")
         if response == 'y':
             print("\nHaaaah! Excellent, I have ESP!!\n")
@@ -91,7 +91,7 @@ r7 = int(input("Remainder when you divide by 7? \n\n (0,1,2,3,4,5,6): "))
 # Find the number using the remainders upon division by 3,5,7
 num1 = (70 * r3) + (21 * r5) + (15 * r7)
 
-Num = num1 % 105
+num = num1 % 105
 
 print(f"Me thinks your number is {num} :-)!")
 time.sleep(5)
